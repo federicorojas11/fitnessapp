@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ng-deploy-fitnesstrack": {
+      "hosting": {
+        "trainingApp": [
+          "ng-deploy-fitnesstrack"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ng-deploy-fitnesstrack"
+  }
+}
