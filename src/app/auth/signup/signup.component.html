@@ -21,7 +21,7 @@
         >El campo no puede estar vacío.</mat-error
       >
       <mat-error *ngIf="!emailInput.hasError('required')"
-        >E-Mail is invalid.</mat-error
+        >Email inválido.</mat-error
       >
     </mat-form-field>
 
@@ -47,6 +47,7 @@
         [max]="maxDate"
         ngModel
         name="date"
+        placeholder="Tu cumpleaños"
         required
       />
       <mat-datepicker-toggle [for]="picker" matSuffix> </mat-datepicker-toggle>

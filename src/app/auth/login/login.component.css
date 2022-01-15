@@ -1,0 +1,7 @@
+@media screen and (min-width: 792px) {
+  form {
+    height: 50vh;
+    margin-top: 50px;
+    transform: scale(1.3);
+  }
+}

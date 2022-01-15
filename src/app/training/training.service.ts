@@ -7,13 +7,30 @@ import 'rxjs/add/operator/map';
 export class TrainingService {
   exerciseChanged = new Subject<Exercise>();
 
-  availableExercises: Exercise[] = [];
+  availableExercises: Exercise[] = [
+    { id: 'crunches', name: 'Sentadillas', duration: 30, calories: 8 },
+    {
+      id: 'touch-toes',
+      name: 'Tocar los tobillos',
+      duration: 180,
+      calories: 15,
+    },
+    {
+      id: 'side-lunges',
+      name: 'Jumping jacks (saltos)',
+      duration: 120,
+      calories: 18,
+    },
+    { id: 'burpees', name: 'Burpees', duration: 60, calories: 8 },
+  ];
   private runningExercise: Exercise;
   private exercises: Exercise[] = [];
 
   constructor() {}
 
-  fetchAvailableExercises() {}
+  getAvailableExercises() {
+    return this.availableExercises.slice();
+  }
 
   startExercise(selectedId: string) {
     this.runningExercise = this.availableExercises.find(

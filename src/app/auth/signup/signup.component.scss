@@ -1,3 +1,11 @@
 mat-form-field {
   width: 300px;
 }
+
+@media screen and (min-width: 792px) {
+  form {
+    height: 50vh;
+    margin-top: 130px;
+    transform: scale(1.3);
+  }
+}

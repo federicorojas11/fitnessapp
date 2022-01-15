@@ -11,8 +11,8 @@
           <mat-select ngModel name="exercise" required>
             <div>
               <mat-option
-                *ngFor="let exercise of exercises | async"
-                [value]="exercise.name"
+                *ngFor="let exercise of availableTrainings"
+                [value]="exercise.id"
               >
                 {{ exercise.name }}
               </mat-option>
